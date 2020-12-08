@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import MansComponents from "./components/ManComponent/MansComponents";
+import WomansComponent from "./components/WomanComponent/WomansComponent";
+import CouplesComponent from "./components/CoupleComponent/CouplesComponent";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+    //Створити масив man. { id, name, age, wife_id }
+    // Створити масив woman. { id, name, age, husband_id }
+
+
+
+    render() {
+
+        return (
+            <div>
+                    {/*<MansComponents/>*/}
+                    {/*<hr/>*/}
+                    {/*<WomansComponent/>*/}
+                    <hr/>
+                    <CouplesComponent/>
+                    <hr/>
+            </div>
+        );
+    }
 }
 
 export default App;
